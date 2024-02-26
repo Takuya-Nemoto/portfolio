@@ -1,0 +1,44 @@
+---
+import Github from "./Icons/Github.astro"
+import Linkedin from "./Icons/Linkedin.astro"
+---
+
+<div class="h-[40vh] bg-black flex flex-col justify-around">
+    <div class="flex justify-around">
+      <div class="h-24 flex flex-col items-center justify-around">
+        <p class="text-white text-lg lg:text-2xl">
+            Takuya Nemoto
+        </p>
+        <p class="text-white text-sm lg:text-lg">
+            プログラマー
+        </p>
+      </div>
+      <div class="h-24 flex flex-col items-center justify-around">
+        <p class="text-white text-lg lg:text-2xl">
+          SOCIAL
+        </p>
+        <div class="flex items-center justify-center gap-x-2">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/takuya-nemoto-4855501a8"
+            rel="noopener noreferrer"
+          >
+            <Linkedin class="h-6 w-6" name="skill-icons:linkedin" />
+          </a>
+          <a
+            target="_blank"
+            href="https://github.com/Takuyawe"
+            rel="noopener noreferrer"
+          >
+            <Github class="h-6 w-6 text-white" name="mdi:github" />          
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="h-1/3 flex flex-col items-center justify-around">
+        <div class="border-b-8 rounded-md border-gray-600 w-3/5 self-center" />
+        <p class="text-white text-sm lg:text-lg">
+        © Copyright 2023. Made by Takuya Nemoto
+      </p>
+    </div>
+  </div>

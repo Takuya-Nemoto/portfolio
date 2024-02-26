@@ -3,21 +3,22 @@
 const handleSubmit = () => {}
 ---
 
-<div class="relative h-2/3">
+<div class="relative h-screen">
     <div class="absolute">
-        <img src="/background-white.jpg" alt="contact" >
+        <img src="/background-white.jpg" alt="contact" class="fill h-screen w-screen">
     </div>
-    <div class="absolute top-1/2 left-[40%] z-10 pt-12 h-64 flex flex-col items-center justify-around">
+    <div class="absolute top-[35%] left-[30%] z-10 pt-12 h-64 flex flex-col items-center justify-center gap-y-5">
         <p class="text-3xl lg:text-5xl">
             CONTACT
         </p>
         <div class="border-b-8 rounded-md border-blue-600 w-12 self-center" />
         <p class="w-3/4 lg:w-full text-center text-sm lg:text-xl" font-weight="300">
-            下記3項目を記入の上、SUBMITボタンを押下してください。 <br> ご連絡をお待ちしております!
+            下記3項目を記入の上、SUBMITボタンを押下してください。
+            <br> ご連絡をお待ちしております!
         </p>
 
-        <div class="w-96 h-[40rem] lg:w-[40rem] bg-white rounded-md shadow-md">
-            <form method="POST" action="/api/formSubmit" class="flex flex-col mx-8">
+        <div class="w-96 h-[40rem] lg:w-[40rem] my-12 bg-white rounded-lg shadow-md">
+            <form method="POST" action="/api/formSubmit" class="flex flex-col mx-8 my-4">
                 <label for="name" class="mt-4 mb-2 self-start text-xs lg:text-base">お名前</label>
                 <input type="text" id="name" name="name" required class="mt-0" autocomplete="name" placeholder="お名前" />
                 
@@ -27,7 +28,8 @@ const handleSubmit = () => {}
                 <label for="message" class="mt-4 mb-2 self-start text-xs lg:text-base">メッセージ</label>
                 <textarea id="message" name="message" required class="mt-0" rows="10" autocomplete="message" placeholder="メッセージ"></textarea>
                 
-                <button type="submit" class="self-end mt-4 w-24 bg-blue-600 hover:bg-blue-500">Submit</button>
-              </form>
+                <button type="submit" class="self-center mt-4 h-8 w-[28rem] text-white rounded-lg bg-blue-600 hover:bg-blue-500">Submit</button>
+            </form>
         </div>
+    </div>
 </div>
