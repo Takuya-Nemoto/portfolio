@@ -1,13 +1,17 @@
 ---
-
+import { Image } from "astro:assets";
+import background from "../../public/background-white.jpg";
 ---
 
 <div class="w-full h-screen flex justify-center">
   <div class="absolute inset-0">
-    <img
+    <Image
       src="/background-white.jpg"
       alt="Profile"
       class="fill h-screen w-full"
+      height={1080}
+      width={1920}
+      format="webp"
     />
   </div>
   <div
