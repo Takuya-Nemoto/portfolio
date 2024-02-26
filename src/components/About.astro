@@ -1,0 +1,71 @@
+---
+import Image from "./Image.astro";
+---
+
+<div class="h-screen w-full bg-gray-100">
+  <div
+    class="h-48 lg:h-64 pt-6 lg:pt-12 flex flex-col items-center justify-around"
+  >
+    <p class="text-3xl lg:text-5xl">ABOUT ME</p>
+    <div class="border-b-8 rounded-md border-blue-600 w-12 self-center"></div>
+    <p class="w-3/4 text-center text-sm lg:text-xl">
+      このセクションでは、私の経験とスキルに関する情報をご確認することができます。
+    </p>
+  </div>
+  <div class="h-2/3 flex items-start lg:mt-12">
+    <div class="lg:flex lg:w-full">
+      <div
+        class="h-72 lg:h-96 lg:w-full flex flex-col items-center justify-around"
+      >
+        <p class="text-2xl lg:text-4xl">My Introduction</p>
+        <div class="w-3/4">
+          <p class="text-xs lg:text-base">
+            これまでのエンジニアとしてのキャリアで、2つのプロジェクトを経験してきました。1つ目は、機械学習のプロジェクトで、主にPythonを用いて画像分類や物体検出などを扱うプロダクトを開発していました。2つ目のプロジェクトでは、JavaScriptのフレームワークであるReact.jsで、GISデータを用いるWebアプリ開発に携わっています。<br
+            />
+          </p> 今後の目標として、既存のスキルを磨きながら、フロントエンドとバックエンドを共に扱えるフルスタックなエンジニアを目指しています。
+        </div> 
+        <a href="#contact">
+          <button
+            class="bg-blue-600 h-8 w-28 lg:h-12 lg:w-36 rounded-lg text-white hover:bg-blue-500"
+          >
+            Contact
+          </button>
+        </a>
+      </div>
+     
+    </div>
+    <div class="w-full h-72 lg:h-96 flex flex-col items-center justify-around">
+      <p class="text-2xl lg:text-4xl">My Skills</p>
+      <div class="flex flex-col items-center">
+        <div class="shadow-md bg-blue-100 py-2 px-4 rounded-2xl mb-4">
+          <p class="text-xs lg:text-lg">言語&フレームワーク</p>
+        </div>
+
+        <div class="flex">
+          <Image src="/about/html5.svg" alt="html5" />
+          <Image src="/about/css.svg" alt="css" />
+          <Image src="/about/js.svg" alt="js" />
+          <Image src="/about/typescript.svg" alt="typescript" />
+          <Image src="/about/python.svg" alt="python" />
+          <Image src="/about/nodejs.svg" alt="nodejs" />
+          <Image src="/about/reactjs.svg" alt="reactjs" />
+          <Image src="/about/nextjs.svg" alt="nextjs" />
+        </div>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="shadow-md bg-blue-100 py-2 px-4 rounded-2xl mb-4">
+          <p class="text-xs lg:text-lg">その他開発ツール</p>
+        </div>
+        <div class="flex">
+          <Image src="/about/aws.svg" alt="aws" />
+          <Image src="/about/git.svg" alt="git" />
+          <Image src="/about/docker.svg" alt="docker" />
+          <Image src="/about/google-cloud.svg" alt="google-cloud" />
+          <Image src="/about/linux.svg" alt="linux" />
+          <Image src="/about/mongodb.svg" alt="mongodb" />
+          <Image src="/about/postgresql.svg" alt="postgresql" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+---
+type Props = {
+  src: string;
+  alt: string;
+};
+
+const { src, alt } = Astro.props;
+---
+
+<img src={src} alt={alt} class="h-10 w-10 md:h-16 md:w-16 lg:h-20 lg:w-20" />
